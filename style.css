@@ -1,0 +1,26 @@
+.container{
+	height:700px;
+	width:700px;
+	margin: 0 auto;
+	border:3px solid black;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.small-box{
+	width:5px;
+	height:5px;
+	background-color: white;
+	display: block;
+	border:1px solid black;
+
+}
+
+.small-box-red{
+	background-color: red;
+	width:5px;
+	height:5px;
+	display: block;
+	border:1px solid black;
+}
