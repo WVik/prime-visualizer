@@ -21,6 +21,7 @@ for(var i=1;i<=num1;i++){
 	var newid = document.createElement('div');
 newid.className = 'small-box';
 newid.id = i;
+newid.title=i;
 if(isPrime(i)){
 	newid.className = 'small-box-red';
   }
@@ -47,3 +48,7 @@ function isPrime(i){
 	return true;
 }
 
+
+document.querySelector('.small-box').hover(function(){
+	$(this).tooltip(this.title);
+})
